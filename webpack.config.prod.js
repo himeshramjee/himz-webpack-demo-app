@@ -2,9 +2,8 @@ const common = require("./webpack.config.common.js");
 const { merge } = require("webpack-merge");
 
 module.exports = merge(common, {
-  mode: "development",
-  devtool: "source-map",
+  mode: "production",
   output: {
-    filename: "main.js",
+    filename: "[name].[contenthash].js",
   },
 });
