@@ -5,7 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-dev": "webpack-dev-server --config webpack.config.dev.js --open",
+    "start": "webpack-dev-server --config webpack.config.dev.js --open",
+    "build": "webpack --config webpack.config.dev.js",
     "build-prod": "webpack --config webpack.config.prod.js"
   },
   "author": "",
@@ -13,6 +14,8 @@
   "devDependencies": {
     "bootstrap": "^5.2.3",
     "css-loader": "^6.7.2",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "node-sass": "^8.0.0",
     "sass-loader": "^13.2.0",
