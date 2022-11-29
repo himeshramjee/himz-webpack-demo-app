@@ -67,13 +67,13 @@ export class AlertService {
 }
 
 export const MessagePriorities = Object.freeze({
-  High: Symbol("high"),
-  Medium: Symbol("medium"),
-  Low: Symbol("low"),
+  High: Symbol("High"),
+  Medium: Symbol("Medium"),
+  Low: Symbol("Low"),
 });
 
 export const MessageTypes = Object.freeze({
-  Information: Symbol("information"),
-  Warning: Symbol("warning"),
-  Error: Symbol("error"),
+  Information: Symbol("Information"),
+  Warning: Symbol("Warning"),
+  Error: Symbol("Error"),
 });
