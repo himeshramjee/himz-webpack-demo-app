@@ -1,0 +1,12 @@
+// @import "../../node_modules/bootstrap/scss/functions";
+// @import "../../node_modules/bootstrap/scss/variables";
+// @import "../../node_modules/bootstrap/scss/mixins";
+
+// $theme-colors: map-merge($theme-colors, (
+//   "primary": teal,
+//   "secondary": green
+// ));
+
+$primary: teal;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
