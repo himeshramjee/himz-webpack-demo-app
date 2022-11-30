@@ -1,0 +1,15 @@
+$bgcolor: rgba(179, 241, 249, 0.2);
+// $textcolor: darkblue;
+$fontsize: 15px;
+
+/* Use the variables */
+body {
+  background-color: $bgcolor;
+  // color: $textcolor;
+  font-size: $fontsize;
+}
+
+img {
+  width: 150px;
+  height: 200px;
+}

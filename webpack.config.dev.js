@@ -7,7 +7,7 @@ module.exports = merge(common, {
   devtool: "source-map",
   output: {
     path: path.resolve(__dirname, "dev-dist"),
-    filename: "[name]-bundle.js",
+    filename: "[name]-js-bundle.js",
   },
   module: {
     rules: [

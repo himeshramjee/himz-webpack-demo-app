@@ -7,7 +7,7 @@ module.exports = merge(common, {
   mode: "production",
   output: {
     path: path.resolve(__dirname, "prod-dist"),
-    filename: "[name].[contenthash]-bundle.js",
+    filename: "[name].[contenthash]-js-bundle.js",
   },
   plugins: [
     new MiniCssExtractPlugin({

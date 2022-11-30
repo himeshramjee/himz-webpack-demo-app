@@ -6,27 +6,27 @@ module.exports = {
     main: "./src/index.js",
     vendor: "./src/vendor.js",
   },
+  output: {
+    assetModuleFilename: "imgs/[hash][ext][query]",
+  },
   module: {
     rules: [
       {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset/resource",
+      },
+      {
         test: /\.html$/i,
         use: ["html-loader"],
+        // exclude: /\.(png|jpe?g|gif|svg)$/i,
       },
-      // {
-      //   test: /\.(png|jpe?g|gif|svg)$/i,
-      //   loader: "file-loader",
-      //   options: {
-      //     name: "[name].[contenthash].[ext]",
-      //     output: "imgs",
-      //   },
-      // }
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       // https://github.com/jantimon/html-webpack-plugin#options
-      filename: "index.html",
-      template: "./src/template.html",
+      template: "./src/index.html",
+      filename: "index.html", // the generated file name
       inject: "body",
       // scriptLoading: "defer",
     }),
