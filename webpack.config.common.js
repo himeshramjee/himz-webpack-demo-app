@@ -8,6 +8,7 @@ module.exports = {
   },
   output: {
     assetModuleFilename: "imgs/[hash][ext][query]",
+    clean: true,
   },
   module: {
     rules: [
